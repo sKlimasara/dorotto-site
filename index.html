@@ -127,6 +127,190 @@
     </div>
   </section>
 
+  <!-- OFERTA -->
+  <section id="oferta" class="section py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold">Nasze warzywa</h2>
+          <p class="mt-4 text-white/80">Uprawiamy odmiany dobrane pod smak i stabilność dostaw. Zamówienia pakujemy według specyfikacji dla kuchni profesjonalnych.</p>
+          <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+            <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[var(--brand)]"></span><span><strong>Pomidory</strong>: malinowe, śliwkowe, cherry, San Marzano</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[var(--brand)]"></span><span><strong>Papryki</strong>: czerwona, żółta, pomarańczowa, Ramiro, Padron</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[var(--brand)]"></span><span><strong>Liściaste</strong>: bazylia, rukola, baby szpinak, mix sałat</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[var(--brand)]"></span><span><strong>Sezonowe</strong>: ogórki, bakłażan, cukinia, zioła</span></li>
+          </ul>
+          <div class="mt-8 flex gap-4">
+            <a href="#zamow" class="rounded-xl bg-[var(--brand)] px-5 py-3 text-[#0c140e] font-semibold hover:bg-[var(--brand-2)]">Zapytaj o cennik</a>
+            <a href="#restauracje" class="rounded-xl border border-white/20 px-5 py-3 font-medium hover:bg-white/10">Warunki współpracy</a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <img class="rounded-2xl shadow-soft object-cover h-48 w-full" src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=800&auto=format&fit=crop" alt="Pomidory cherry">
+          <img class="rounded-2xl shadow-soft object-cover h-48 w-full" src="https://images.unsplash.com/photo-1508747703725-719777637510?q=80&w=800&auto=format&fit=crop" alt="Papryki">
+          <img class="rounded-2xl shadow-soft object-cover h-48 w-full" src="https://images.unsplash.com/photo-1439127989242-c3749a012eac?q=80&w=800&auto=format&fit=crop" alt="Szpinak">
+          <img class="rounded-2xl shadow-soft object-cover h-48 w-full" src="https://images.unsplash.com/photo-1497636577773-f1231844b336?q=80&w=800&auto=format&fit=crop" alt="Uprawy w szklarni">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DLA RESTAURACJI -->
+  <section id="restauracje" class="section py-20 bg-[var(--bg-2)] border-t border-white/5">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+          <h2 class="text-3xl font-bold">Dla restauracji i hoteli</h2>
+          <p class="mt-4 text-white/80">Dostarczamy bezpośrednio do kuchni — chłodniczo, punktualnie, z dokumentacją partii. Uzgadniamy stałe okna dostaw i gramatury opakowań.</p>
+          <div class="mt-8 grid sm:grid-cols-2 gap-6">
+            <div class="rounded-2xl border border-white/10 p-6">
+              <h3 class="font-semibold mb-2">Stała jakość</h3>
+              <p class="text-white/70 text-sm">Sortowanie klasy I, jednolite kalibry, tasting nowych odmian przed sezonem.</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 p-6">
+              <h3 class="font-semibold mb-2">Transparentność</h3>
+              <p class="text-white/70 text-sm">Karty produktu, pochodzenie, daty zbioru, numery partii, zgodność z HACCP.</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 p-6">
+              <h3 class="font-semibold mb-2">Elastyczne zamówienia</h3>
+              <p class="text-white/70 text-sm">Dziennie, tygodniowo lub sezonowo. Minimum logistyczne ustalamy indywidualnie.</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 p-6">
+              <h3 class="font-semibold mb-2">Wsparcie menu</h3>
+              <p class="text-white/70 text-sm">Listy odmian pod konkretne dania, prognozy dostępności i sezonowości.</p>
+            </div>
+          </div>
+        </div>
+        <aside class="rounded-2xl border border-white/10 p-6 h-fit">
+          <h3 class="font-semibold">Próbna dostawa</h3>
+          <p class="text-white/70 text-sm mt-2">Zostaw kontakt — oddzwonimy tego samego dnia roboczego i zaproponujemy termin degustacji produktów.</p>
+          <form class="mt-4 grid gap-3" onsubmit="event.preventDefault(); alert('Dziękujemy! Wrócimy z potwierdzeniem.'); this.reset();">
+            <input required class="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 placeholder:text-white/40" placeholder="Nazwa restauracji" />
+            <input required type="email" class="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 placeholder:text-white/40" placeholder="E-mail do zamówień" />
+            <input class="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 placeholder:text-white/40" placeholder="Telefon (opcjonalnie)" />
+            <button class="rounded-xl bg-[var(--brand)] px-5 py-3 text-[#0c140e] font-semibold hover:bg-[var(--brand-2)]">Zamów próbkę</button>
+          </form>
+          <p class="text-[10px] text-white/50 mt-3">Dane przetwarzamy wyłącznie w celu kontaktu w sprawie współpracy. Brak newsletterów ani spamu.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRAKTYKI -->
+  <section id="praktyki" class="section py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold">Jak uprawiamy — ekologicznie i odpowiedzialnie</h2>
+          <ul class="mt-6 space-y-3 text-sm text-white/80">
+            <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[var(--brand)]"></span>Naturalne metody ochrony roślin (pożyteczne owady, napary roślinne), brak herbicydów syntetycznych.</li>
+            <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[var(--brand)]"></span>Nawożenie kompostem i nawozami organicznymi — budujemy żyzność gleby.</li>
+            <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[var(--brand)]"></span>Nawadnianie kropelkowe i monitorowanie wilgotności — oszczędność wody.</li>
+            <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-[var(--brand)]"></span>Rotacja upraw i międzyplony — zdrowe rośliny, stabilne plony.</li>
+          </ul>
+        </div>
+        <div class="grid grid-cols-3 gap-3">
+          <img class="rounded-xl object-cover h-28 w-full" src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=600&auto=format&fit=crop" alt="Pomidory na krzakach">
+          <img class="rounded-xl object-cover h-28 w-full" src="https://images.unsplash.com/photo-1580944057551-84f826a267df?q=80&w=600&auto=format&fit=crop" alt="Papryka w szklarni">
+          <img class="rounded-xl object-cover h-28 w-full" src="https://images.unsplash.com/photo-1492496913980-501348b61469?q=80&w=600&auto=format&fit=crop" alt="Liściaste">
+          <img class="rounded-xl object-cover h-28 w-full" src="https://images.unsplash.com/photo-1459156212016-c812468e2115?q=80&w=600&auto=format&fit=crop" alt="Kompost">
+          <img class="rounded-xl object-cover h-28 w-full" src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?q=80&w=600&auto=format&fit=crop" alt="Nawadnianie">
+          <img class="rounded-xl object-cover h-28 w-full" src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=600&auto=format&fit=crop" alt="Międzyplony">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTYFIKACJA -->
+  <section id="certyfikacja" class="section py-20 bg-[var(--bg-2)] border-y border-white/5">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold">Certyfikacja i jakość</h2>
+      <div class="mt-6 grid lg:grid-cols-2 gap-8 items-start">
+        <div class="rounded-2xl border border-white/10 p-6">
+          <p class="text-white/80">PomiDoro działa zgodnie z wymaganiami rolnictwa ekologicznego. Znakowanie i komunikację prowadzimy według obowiązujących wytycznych instytucji certyfikujących. Jeżeli używasz logotypów (np. PL-EKO, EU Leaf, Soil Association), pamiętaj: dozwolone wyłącznie po uzyskaniu certyfikatu i akceptacji jednostki certyfikującej.</p>
+          <p class="text-white/60 text-xs mt-3">Uwaga prawna: użycie znaków certyfikacji ekologicznej podlega zatwierdzeniu. Zawsze stosuj aktualne wytyczne organizacji certyfikujących.</p>
+        </div>
+        <div class="grid grid-cols-3 gap-4 items-center">
+          <img class="mx-auto h-14 opacity-80" src="https://dummyimage.com/160x80/243424/ffffff&text=PL-EKO" alt="PL-EKO (placeholder)">
+          <img class="mx-auto h-14 opacity-80" src="https://dummyimage.com/160x80/243424/ffffff&text=EU+Leaf" alt="EU Leaf (placeholder)">
+          <img class="mx-auto h-14 opacity-80" src="https://dummyimage.com/160x80/243424/ffffff&text=Soil+Association" alt="Soil Association (placeholder)">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPINIE -->
+  <section class="section py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-6">
+        <article class="rounded-2xl border border-white/10 p-6">
+          <p class="text-white/80">„Pomidory PomiDoro mają ten słodki, słoneczny smak, którego szukamy do carpaccio i sosów. Stabilna jakość i terminowość dostaw.”</p>
+          <div class="mt-4 text-sm text-white/60">— Szef Kuchni, Restaurant A</div>
+        </article>
+        <article class="rounded-2xl border border-white/10 p-6">
+          <p class="text-white/80">„Doceniamy przejrzystość — karty produktu, kalibry, odmiany. Wspólnie planujemy sezonowość menu bez niespodzianek.”</p>
+          <div class="mt-4 text-sm text-white/60">— Kierownik Zakupów, Hotel B</div>
+        </article>
+        <article class="rounded-2xl border border-white/10 p-6">
+          <p class="text-white/80">„Degustacje nowych odmian przed sezonem to strzał w dziesiątkę. Goście wracają po naszą paprykę z grilla.”</p>
+          <div class="mt-4 text-sm text-white/60">— Właściciel, Bistro D</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZAMÓWIENIE / KONTAKT -->
+  <section id="zamow" class="section py-20 bg-[var(--bg-2)] border-t border-white/5">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <h2 class="text-3xl font-bold">Złóż zapytanie / Zamów dostawę</h2>
+          <p class="mt-4 text-white/80">Napisz, jakie produkty i wolumeny Cię interesują. Wrócimy z potwierdzeniem dostępności i cennikiem.</p>
+          <form class="mt-6 grid gap-4 max-w-xl" onsubmit="event.preventDefault(); alert('Dziękujemy! Skontaktujemy się niebawem.'); this.reset();">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <input required class="rounded-xl bg-white/5 border border-white/10 px-4 py-3 placeholder:text-white/40" placeholder="Nazwa firmy" />
+              <input required class="rounded-xl bg-white/5 border border-white/10 px-4 py-3 placeholder:text-white/40" placeholder="NIP / VAT ID" />
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <input required type="email" class="rounded-xl bg-white/5 border border-white/10 px-4 py-3 placeholder:text-white/40" placeholder="E-mail do zamówień" />
+              <input class="rounded-xl bg-white/5 border border-white/10 px-4 py-3 placeholder:text-white/40" placeholder="Telefon" />
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <select class="rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-white/80">
+                <option class="bg-[var(--bg-2)]">Dostawy: 1x tygodniowo</option>
+                <option class="bg-[var(--bg-2)]">Dostawy: 2x tygodniowo</option>
+                <option class="bg-[var(--bg-2)]">Dostawy: codziennie (pn–pt)</option>
+              </select>
+              <select class="rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-white/80">
+                <option class="bg-[var(--bg-2)]">Transport: chłodnia PomiDoro</option>
+                <option class="bg-[var(--bg-2)]">Odbiór własny</option>
+              </select>
+            </div>
+            <fieldset class="grid sm:grid-cols-2 gap-2 text-sm">
+              <label class="inline-flex items-center gap-2"><input type="checkbox" class="accent-[var(--brand)]"><span>Pomidory (odmiany)</span></label>
+              <label class="inline-flex items-center gap-2"><input type="checkbox" class="accent-[var(--brand)]"><span>Papryki (kalibry)</span></label>
+              <label class="inline-flex items-center gap-2"><input type="checkbox" class="accent-[var(--brand)]"><span>Liściaste / zioła</span></label>
+              <label class="inline-flex items-center gap-2"><input type="checkbox" class="accent-[var(--brand)]"><span>Sezonowe</span></label>
+            </fieldset>
+            <textarea rows="5" class="rounded-xl bg-white/5 border border-white/10 px-4 py-3 placeholder:text-white/40" placeholder="Wiadomość / specyfikacja (odmiany, kalibry, wolumeny)"></textarea>
+            <button class="rounded-xl bg-[var(--brand)] px-6 py-3 text-[#0c140e] font-semibold hover:bg-[var(--brand-2)] w-fit">Wyślij zapytanie</button>
+            <p class="text-[10px] text-white/50">Przesyłając formularz, akceptujesz przetwarzanie danych w celu obsługi zapytania. Nie wysyłamy newsletterów, nie udostępniamy danych.</p>
+          </form>
+        </div>
+        <div id="kontakt" class="rounded-2xl border border-white/10 p-6 h-fit">
+          <h3 class="font-semibold">Kontakt</h3>
+          <div class="mt-4 grid gap-2 text-white/80 text-sm">
+            <div><span class="text-white/50">E-mail:</span> zamowienia@pomidoro.pl</div>
+            <div><span class="text-white/50">Telefon:</span> +48 600 000 000</div>
+            <div><span class="text-white/50">Adres:</span> ul. Zielona 12, 00-000 Dorotowo</div>
+            <div><span class="text-white/50">Godziny:</span> pon–pt 7:00–17:00</div>
+          </div>
+          <iframe class="mt-6 w-full h-64 rounded-xl border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Warsaw,Poland&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- STOPKA -->
   <footer class="py-10">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
